@@ -1,0 +1,35 @@
+.Result {
+    height: 100vh;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-card {
+    padding: 50px;
+    background-color: #080808;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px #000000;
+    max-width: 50%;
+}
+
+.result-card .result {
+    color: #84C125;
+    font-size: 64px;
+    margin: 25px;
+}
+
+.result-card .hint {
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.result-card p {
+    color: white;
+    font-size: 40px;
+}

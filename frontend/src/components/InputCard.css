@@ -1,0 +1,42 @@
+.InputCard {
+    margin-top: 50px;
+}
+
+.InputCard-title {
+    font-size: 28px;
+    color: white;
+}
+
+.gb-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gb-card-selected {
+    background-color: #84C125;
+    color: white;
+}
+
+.gb-card-selected .gb-card-help {
+    color: #006337
+}
+
+.gb-card {
+    cursor: pointer;
+    width: fit-content;
+    min-width: 150px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.gb-card-title {
+    font-size: 24px;
+}
+
+.gb-card-help {
+    color: #6F6F6F;
+}

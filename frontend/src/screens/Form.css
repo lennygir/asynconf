@@ -1,0 +1,23 @@
+.Form {
+    padding: 100px;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Form-progress {
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+}
+
+.Form-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.p-progressbar {
+    border-radius: 0px;
+}
