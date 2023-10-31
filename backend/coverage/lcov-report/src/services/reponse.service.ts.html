@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.69% </span>
+                <span class="strong">80.76% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/26</span>
+                <span class='fraction'>21/26</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">42.85% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>3/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/20</span>
+                <span class='fraction'>15/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -95,71 +95,68 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import AsynconfDatabase from "../database";
 &nbsp;
 export default class ReponseService {
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >static </span>scoreEnTaux(score: number): number {
-        const roundedScore = <span class="cstat-no" title="statement not covered" >Math.round(score);</span>
-<span class="cstat-no" title="statement not covered" >        if(score &lt; 10) {</span>
+    public static scoreEnTaux(score: number): number {
+        const roundedScore = Math.round(score);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(score &lt; 10) {
 <span class="cstat-no" title="statement not covered" >            return 3;</span>
-        } else <span class="cstat-no" title="statement not covered" >if(score &lt; 15) {</span>
+        } else <span class="missing-if-branch" title="if path not taken" >I</span>if(score &lt; 15) {
 <span class="cstat-no" title="statement not covered" >            return 2.74;</span>
-        } else <span class="cstat-no" title="statement not covered" >if(score &lt; 25) {</span>
-<span class="cstat-no" title="statement not covered" >            return 2.52;</span>
-        } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span>if(score &lt; 33) {</span>
+        } else if(score &lt; 25) {
+            return 2.52;
+        } else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="if path not taken" >I</span><span class="missing-if-branch" title="else path not taken" >E</span>if(score &lt; 33) {</span>
 <span class="cstat-no" title="statement not covered" >            return 2.10;</span>
         }
 <span class="cstat-no" title="statement not covered" >        return 1.85;</span>
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >static </span>calculTaux(reponses: any): {taux: number} {
-<span class="cstat-no" title="statement not covered" >        reponses = Object.values(reponses);</span>
-        const sql = <span class="cstat-no" title="statement not covered" >`select t.type, r.score</span>
+    public static calculTaux(reponses: any): {taux: number} {
+        reponses = Object.values(reponses);
+        const sql = `select t.type, r.score
                         from reponses r 
                             join questions q on r.question_id = q.id and r.question_version = q.version
                             join type_question t on t.id = q.type
-                        where r.id in (${reponses.map(<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >'?')</span>.join(',')})`;
-        const data = <span class="cstat-no" title="statement not covered" >AsynconfDatabase.query(sql, [...reponses]);</span>
-        const scoreReponse = <span class="cstat-no" title="statement not covered" >data.filter(<span class="fstat-no" title="function not covered" >(r</span>: any) =&gt; <span class="cstat-no" title="statement not covered" >r.type === "SCORE")</span>;</span>
-        const tauxReponse = <span class="cstat-no" title="statement not covered" >data.filter(<span class="fstat-no" title="function not covered" >(r</span>: any) =&gt; <span class="cstat-no" title="statement not covered" >r.type === "TAUX")</span>;</span>
-        let score = <span class="cstat-no" title="statement not covered" >scoreReponse.map(<span class="fstat-no" title="function not covered" >(r</span>: any) =&gt; <span class="cstat-no" title="statement not covered" >r.score)</span>.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc: number, val: number) =&gt; <span class="cstat-no" title="statement not covered" >acc + val,</span> 0);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        return { taux: tauxReponse.map(<span class="fstat-no" title="function not covered" >(r</span>: any) =&gt; <span class="cstat-no" title="statement not covered" >r.score)</span>.reduce(<span class="fstat-no" title="function not covered" >(a</span>cc: number, val: number) =&gt; <span class="cstat-no" title="statement not covered" >acc + val,</span> this.scoreEnTaux(score)) };</span>
+                        where r.id in (${reponses.map(() =&gt; '?').join(',')})`;
+        const data = AsynconfDatabase.query(sql, [...reponses]);
+        const scoreReponse = data.filter((r: any) =&gt; r.type === "SCORE");
+        const tauxReponse = data.filter((r: any) =&gt; r.type === "TAUX");
+        let score = scoreReponse.map((r: any) =&gt; r.score).reduce((acc: number, val: number) =&gt; acc + val, 0);
+        return { taux: tauxReponse.map((r: any) =&gt; r.score).reduce((acc: number, val: number) =&gt; acc + val, this.scoreEnTaux(score)) };
     }
 &nbsp;
 }</pre></td></tr></table></pre>
@@ -169,7 +166,7 @@ export default class ReponseService {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-31T10:58:10.725Z
+                at 2023-10-31T11:24:09.369Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

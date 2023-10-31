@@ -27,7 +27,6 @@ export default class ReponseService {
         const scoreReponse = data.filter((r: any) => r.type === "SCORE");
         const tauxReponse = data.filter((r: any) => r.type === "TAUX");
         let score = scoreReponse.map((r: any) => r.score).reduce((acc: number, val: number) => acc + val, 0);
-
         return { taux: tauxReponse.map((r: any) => r.score).reduce((acc: number, val: number) => acc + val, this.scoreEnTaux(score)) };
     }
 

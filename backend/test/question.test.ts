@@ -9,7 +9,7 @@ jest.mock('../src/database.ts', () => ({
   },
 }));
 
-describe('callNextClient', () => {
+describe('[Question]', () => {
   it('GET /questions/ - should return a list of questions', async () => {
 
     const result = await request(server).get('/questions');
@@ -19,7 +19,7 @@ describe('callNextClient', () => {
     expect(result.status).toBe(200);
 
     // Check the response body
-    expect(result.body.length).toBe(2);
+    expect(result.body.length).toBe(5);
 
     expect(result.body[0].question).toBe("Quel est le type de véhicule ?");
     expect(result.body[0].reponses.length).toBe(4);

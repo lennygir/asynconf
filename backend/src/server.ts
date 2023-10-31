@@ -2,8 +2,36 @@ import express, { Express, NextFunction, Request } from "express";
 import cors from "cors";
 import { Response } from "express-serve-static-core";
 import routes from "./routes";
+import swaggerUi from "swagger-ui-express";
+import swaggerJsDoc from "swagger-jsdoc";
 
 const server: Express = express();
+
+// Swagger
+const swaggerOptions = {
+  definition: {
+    openapi: '3.0.0',
+    info: {
+      contact: {
+        name: "Lenny GIRARDOT",
+        url: "https://asynconf.fr/#tournament",
+        email: "lenny@example.com",
+      },
+      title: 'Green bank API',
+      version: '1.0.0',
+      description: 'API for Green Bank rate simulator',
+    },
+    servers: [
+      {
+        url: 'http://localhost:3000',
+      },
+    ],
+  },
+  apis: ["**/*.ts"]
+};
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs, { explorer: true }));
 
 // CORS
 const corsOptions = {
