@@ -36,4 +36,4 @@ server.use(function (req, res) {
   });
 });
 
-module.exports = server;
+export default server;

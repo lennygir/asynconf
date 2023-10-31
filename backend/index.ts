@@ -1,4 +1,4 @@
-const app = require("./src/server.ts");
+import app from "./src/server";
 const port: number = 3000;
 
 app.listen(port, () => {
