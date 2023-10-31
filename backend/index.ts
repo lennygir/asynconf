@@ -1,6 +1,6 @@
 import app from "./src/server";
-const port: number = 3000;
+const port: number = 443;
 
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+  console.log(`Server listening at https://localhost:${port}`);
 });
