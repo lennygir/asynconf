@@ -1,4 +1,14 @@
-# Asynconf contest
+# Tournoi Asynconf 2023
+
+Contexte :
+J'ai créé cette application lors du tournois [Asynconf 2023](https://asynconf.fr/). Nous avions 24h pour faire une application répondant aux critères.
+
+Ressources :
+- [Sujet](sujet_tournoi.pdf)
+- [Règlement](reglement_tournoi.pdf)
+
+Résultat :
+8e place
 
 ## Prerequisites
 - nodejs
