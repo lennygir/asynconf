@@ -8,7 +8,7 @@ Ressources :
 - [Règlement](reglement_tournoi.pdf)
 
 Résultat :
-8e place
+8e/80 (UI simple et intuitive, pourrait etre + detaillee. PS: le forcing de PORT pour le front est infonctionnel et j'ai du le patcher. Continue comme ca ! la doc et l'API te donne un bonus ainsi que la page 404)
 
 ## Prerequisites
 - nodejs
